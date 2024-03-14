@@ -1,0 +1,674 @@
+*,
+html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:265073;
+}
+
+
+header{
+background-color:#222831 ;
+color:white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.gambar{
+   width: 50px;
+   height: 50px;
+   border-radius: 20px;
+   margin-left:10px;
+   border-style:groove;
+   border-color: rgb(218, 26, 26) ;
+}
+
+.gambar:hover{
+    animation-name: bersinar ;
+    animation-duration: 20s;
+}
+
+@keyframes bersinar{
+    10%{box-shadow:0px 0px 50px rgb(255, 0, 0)}
+}
+
+.keluar{
+    background-color: crimson;
+    color: #eaeaea;
+
+    box-shadow: 0px 0PX 8px 3px red;
+    margin-right: 40px;
+    margin-left: 30px;
+    padding:10px;
+    border: transparent;
+    border-style: double;
+    font-size: 15px;
+    cursor:pointer;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+}
+
+.keluar:hover{
+    color:red; 
+    
+}
+
+.nama{
+   margin-right: auto;
+   margin-left: 20px;
+   font-family: "Kalam", cursive;
+   animation: loncat 3s infinite;
+   -webkit-animation: loncat 3s infinite;
+}
+
+@keyframes loncat {
+    0%,100%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+    50%{
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+}
+}
+
+.page-1{
+   display: flex;
+   list-style: none;
+   padding:30dpx;
+   cursor:pointer;
+}
+
+.site-1{
+    font-family:Helvetica;
+    padding:20px;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: all .6s ease 0s;
+    -webkit-transition: all .8s ease 0s;
+    -moz-transition: all .6s ease 0s;
+    -ms-transition: all .6s ease 0s;
+    -o-transition: all .6s ease 0s
+    
+}
+
+a:hover{
+    color:tomato;   
+}
+
+
+.gambardua{
+    margin-left:500px;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: right;
+    animation-name:  kekiri;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out ;
+    
+}
+
+
+@keyframes kekiri {
+    from{ transform:translateX(30px) ; 
+    
+}
+    
+ }
+ 
+
+.tulis2{
+    margin-top: 200px;
+    margin-right: 100px;
+    width: auto;
+    white-space: nowrap;
+    writing-mode: sideways-lr;
+    -webkit-writing-mode: sideways-lr;
+    -ms-writing-mode: sideways-lr;
+}
+
+.p1{
+    font-size: 30px;
+}
+
+.p1too{
+    font-size: 15px;
+}
+
+.h2{
+    font-size: 60px;
+}
+
+.h3{
+    font-size: 40px;
+}
+
+.gambar2{
+    width: 500px;
+    height: 400px;
+    background: transparent;
+    margin-top: 80px;
+    object-fit: cover;
+}
+
+@keyframes kekanan{
+    to{ transform:translateX(30px) ; 
+        
+}
+
+}
+
+.gambartiga{
+    display: flex;
+    animation-name: kekanan;
+    animation-duration: 2s;
+
+}
+
+.gambar3{
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 400px;
+    height: 300px;
+}
+
+.tulis3{
+    margin-top: 150px;
+    margin-left: 30;
+}
+
+.p2too{
+    font-size: 25px;
+}
+
+.h4{
+    font-size: 70px;
+}
+
+.h5{
+    font-size: 40;
+}
+
+
+
+.penutup{
+    height: 200px;
+    width: auto;
+    background-color:#2D9596;
+    
+}
+
+.tutup{
+    display: flex;
+    margin-top:50px;
+    width: 100%;
+    height: 100%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.sosmed{
+    background-color:rgb(228, 82, 82);
+    border: 1px solid black;
+    font-family: "Silkscreen", sans-serif;
+    padding: 20px;
+    margin: 30px;   
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgba(0 0 0 0.5)
+    
+    
+}
+
+.icons{
+    font-size: 30px;
+}
+
+.name{
+    margin-bottom:10px;
+    font-size: 20px;
+
+}
+
+.kuy{
+    margin-top:15px;
+}
+
+.gass{
+    margin-top:8px;
+    padding:8px;
+    cursor: pointer;
+    border: transparent;
+    width: 100%;
+    font-family: "Source Code Pro", monospace;
+   
+}
+
+.gass:hover{
+    color:white;
+    transform: rotate(3deg);
+    transform: scale 1;
+    background-color:rgb(46,46,185);
+    transition: .5s ease-in-out;
+    
+    
+}
+
+
+.pme{
+display: flex;
+padding:40px;
+animation-name: fade;
+animation-duration: 2s;
+
+
+}
+
+@keyframes fade{ 
+ 0%{opacity:0 }
+ 100%{opacity: 1;}
+}
+
+.me1{
+    padding:50px;
+    width: auto;
+    white-space: nowrap;
+    writing-mode: sideways-lr;
+    margin-top: 100px;
+}
+
+.nama1{
+    font-size: 60px;
+}
+
+.nama2{
+    font-size:40px ;
+}
+
+.nama3{
+    font-size: 30px;
+}
+
+.nama4{
+    font-size: 20px;
+    
+}
+
+
+
+.gambar4{
+    height: 500px;
+    width: 500px;
+}
+
+.section-card{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 48px;
+    margin:60px auto;
+    
+}
+
+
+.card-img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    
+}
+
+
+
+.card{
+    background-color: #eee;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+   
+}
+
+.card:hover{
+    transform: rotate(15deg);
+    transform: scale(1.2);
+    
+}
+
+
+
+.card-detail{
+    padding:10px;
+ 
+}
+
+.card-detail .detail-1{
+    margin:0 auto;
+    list-style: none;
+    padding:20px 0;
+    width: 80%;
+}
+
+.card-detail .detail-1 li{
+    width: 100%;
+    padding:5px;
+    text-align: center;
+ 
+    
+}
+
+.card-detail .detail-1 li:not(:first-child){
+    border-bottom: 1px solid black;
+}
+
+
+.bio{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+
+.grid{
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    display: grid;
+    margin:15px;
+    grid-gap:15px;
+    cursor:pointer;  
+}
+
+.kartunimg{
+    object-fit: cover;
+}
+
+.grid > .kartunimg{
+    
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+
+.grid > .kartunimg:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width:1000px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:800px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+.desc{
+    width: 100%;
+    padding:100px 0;    
+}
+
+.description{
+    display: flex;
+    justify-content: space-around;
+   
+ 
+}
+
+.desc-img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.desc-text{
+    width: 550px;
+    margin-right: 150px;   
+} 
+
+.desc-h2{
+    font-size: 60px ;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom:1px solid black;
+}
+
+.desc-h5{
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-size:22px;
+    text-transform: capitalize;
+}
+
+.desc-p{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jasa-h2{
+    font-size: 75px;
+    width: 100%;
+    margin-bottom: 30px auto;
+    text-align: center;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.s-card{
+    height: 365px;
+    width: 335px;
+    padding:20px 35px;
+    background-color: 9AD0C2;
+    border-radius: 20px;
+    margin:15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border:2px solid black;
+}
+
+.s-card i{
+font-size: 50px;
+display: block;
+text-align: center;
+margin: 25px;
+}
+
+.s-h5{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.pra > .p-pra{
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom:25px;
+    text-align: center;
+}
+
+.bar-skill{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bar-skill p{
+    text-align: left;
+}
+
+.skill-box{
+    text-align: right;
+    width: 100%;
+    background-color: white;
+}
+
+.java{
+    width: 60%;
+    background-color: red;
+}
+
+.html{
+    width: 80%;
+    background-color: red;
+}
+
+.css{
+    width: 70%;
+    background-color: red;
+}
+
+.javascript{
+    width: 40%;
+    background-color: red;
+}
+
+.sql{
+    width: 70%;
+    background-color: red ;
+}
+
+
+.acv-h2{
+    font-size:50px;
+    
+}
+
+
+
+.prestasi{
+    width: 100%;
+    padding:100px 0;    
+}
+
+.acv{
+    display: flex;
+    justify-content: space-around;
+    
+   
+ 
+}
+
+.acv-img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.acv-text{
+    width: 550px;
+    margin-right: 150px;   
+} 
+
+.acv-h2{
+    font-size: 50px ;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom:1px solid black;
+}
+
+.acv-h5{
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-size:22px;
+    text-transform: capitalize;
+}
+
+.acv-p{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+.pme2{
+    display: flex;
+    padding:40px;
+    animation-name: fade;
+    animation-duration: 2s;
+
+    }
+    
+   
+    
+    .me2{
+        padding:10px;
+        width: auto;
+        margin-top: 100px;
+    }
+    
+    .namame{
+        font-size: 30px;
+    }
+    
+    .namame1{
+        font-size:40px ;
+    }
+    
+    .namame2{
+        font-size: 30px;
+    }
+    
+    .namame4{
+        font-size: 20px;
+        
+    }
+    
+    
+    
+    .gambar4{
+        height: 500px;
+        width: 500px;
+    }
+
+    .exit{
+        object-fit: cover;
+    }
